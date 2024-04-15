@@ -9,7 +9,7 @@
 .categories-grid img {
   width: 92%;
   height: 92%;
-  border: 2px solid black;
+  border: 2px solid rgb(34, 34, 34);
   border-radius: 5px;
   box-shadow: 4px 5px 5px rgba(143, 143, 143, 0.05);
   object-fit: cover;
