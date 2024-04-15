@@ -1,0 +1,110 @@
+.header {
+  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 3px rgba(173, 173, 173, 0.05);
+  z-index: 100;
+  
+}
+
+.logo {
+  font-family: Poppins, Arial;
+  font-weight: 700;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+}
+
+.logo-span {
+  font-family: Poppins, Arial;
+  color: rgb(141, 141, 141);
+  font-weight: 700;
+
+}
+
+.right-section a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 25px;
+  transition: 0.3s;
+}
+
+.right-section a:hover {
+  color: rgb(201, 201, 201);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+  text-decoration-color: rgb(193, 192, 192);
+}
+
+.header-icons {
+  right: 25px;
+  font-size: 40px;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  color: black;
+
+}
+
+#check {
+  display: none;
+}
+
+@media(max-width: 850px) {
+  .logo {
+    font-size: 35px;
+  }
+  .right-section a {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 650px) {
+  .header-icons {
+    display: block;
+  }
+
+  #check:checked~.header-icons #menu-icon {
+    display: none;
+  }
+
+  .header-icons #close-icon {
+    display: none;
+  }
+
+  
+  #check:checked~.header-icons #close-icon {
+    display: block;
+  }
+
+  .right-section {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    transition: .6s ease;
+  }
+
+  #check:checked~.right-section {
+    height: 283.2px;
+  }
+
+  .right-section a {
+    display: block;
+    font-size: 22px;
+    margin: 35px;
+    text-align: center;
+  }
+}
