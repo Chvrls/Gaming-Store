@@ -42,6 +42,8 @@
   left: 15px;
   cursor: pointer;
   transition-duration: 1s;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .categories-text:hover {
@@ -52,6 +54,12 @@
 }
 
 /*PRODUCTS*/
+.store-title h1 {
+  color: white;
+  font-size: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+}
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -72,6 +80,7 @@
 
 .image-container {
   display: flex;
+  margin: 5px 5px 5px 5px;
 }
 
 .product-img {

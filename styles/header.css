@@ -10,7 +10,7 @@
   align-items: center;
   box-shadow: 1px 1px 3px rgba(173, 173, 173, 0.05);
   z-index: 100;
-  
+  border-bottom: 2px solid rgb(30, 26, 26);
 }
 
 .logo {
