@@ -57,6 +57,7 @@
   grid-template-columns: repeat(4, 1fr);
   margin-inline: 100px;
   column-gap: 30px;
+  row-gap: 60px;
 }
 
 .product-container {
@@ -75,6 +76,8 @@
 
 .product-img {
   width: 300px;
+  height: 300px;
+  object-fit: cover;
   max-width: 100%;
   max-height: 100%;
 }
