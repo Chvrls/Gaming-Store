@@ -208,6 +208,30 @@ margin-inline: 350px;
 } 
 
 @media(max-width: 1100px){
-  
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-grid {
+    margin-right: 40px;
+  }
+}
+
+@media(max-width: 750px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    margin-right: 0px;
+    row-gap: 40px;
+  }
+  .about-left {
+    justify-content: center;
+    padding-right: 0px;
+  }
+  .about-right {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
