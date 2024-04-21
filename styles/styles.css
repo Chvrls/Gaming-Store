@@ -134,20 +134,20 @@
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin: 250px 350px 250px 350px;
+  column-gap: 40px;
+  padding: 200px 0px 200px 0px;
 }
 
 .about-left {
   display: flex;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: end;
+  padding-right: 40px;
 }
 
 .about-img {
   width: 230px;
-  max-width: 100%;
-  max-height: 100%;
+  display: flex;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -206,4 +206,8 @@ margin-inline: 350px;
     grid-column: 20px;
   }
 } 
+
+@media(max-width: 1100px){
+  
+}
 
